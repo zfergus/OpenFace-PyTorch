@@ -3,11 +3,11 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
-from layer.lambdas import LambdaBase, Lambda, LambdaMap, LambdaReduce
-from layer.normalize import Normalize
-from layer.spatiallppooling import SpatialLPPooling
-from layer.depthconcat import concat_with_pad
-from layer.spatialcrossmaplrn import SpatialCrossMapLRN
+from .layer.lambdas import LambdaBase, Lambda, LambdaMap, LambdaReduce
+from .layer.normalize import Normalize
+from .layer.spatiallppooling import SpatialLPPooling
+from .layer.depthconcat import concat_with_pad
+from .layer.spatialcrossmaplrn import SpatialCrossMapLRN
 
 
 model = nn.Sequential( # Sequential,
